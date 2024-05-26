@@ -1,0 +1,351 @@
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+body {
+  font-family: 'futura-pt', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+ 
+}
+
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    color: #ffeded;
+    text-transform: uppercase;
+    font-size: 3vmin;
+    padding: 20px;
+    align-content: center;
+}
+
+
+.homepage{
+    top: 45%;
+    left: 50%;
+    z-index: 100;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#name {
+  text-transform: uppercase;
+  text-align: center;
+  pointer-events: none;
+  font-size: 7vw;
+  letter-spacing: 2.6vw;  
+  text-indent: 2.6vw;
+  opacity: 1;
+  font-weight: 500;
+  top: 0;
+  left: auto;
+  transform: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#welcome {
+  text-transform: uppercase;
+  text-align: center;
+  pointer-events: none;
+  font-size: 1vw;
+  letter-spacing: 1.55vw;
+  text-indent: 1.8vw;
+  position: relative;
+  top: 50px;
+  left: auto;
+  transform: none;
+  padding: 0;
+  margin: 0;  
+  font-size: 1.5vw;
+}
+
+#welcome h3{
+  letter-spacing: 1vw;
+  font-size: 1.1vw;
+}
+
+#about{
+  display: flex;
+  align-content: flex-start;
+}
+#title1, #title2, #title3, #title4, #title5{
+  font-size: 6vw;
+  letter-spacing: 2vw;  
+  text-indent: 2.6vw;
+  opacity: 1;
+  font-weight: 500;
+  width: 100%;
+  padding: 8px;
+}
+
+.details{
+  width: 50%;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 10px; 
+  text-transform:initial;
+  font-size: 2vw;
+  
+}
+
+
+#projects {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.project-card {
+  width: 25%;
+  height: 38%;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(244, 209, 245, 0.5); 
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease-out;
+  text-transform:capitalize;
+  color: #31063a;
+}
+
+.project-card:hover {
+  background-color: rgba(244, 209, 245, 0.8); 
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(227, 160, 160, 1);
+ }
+
+ a {
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+} 
+
+#skills{
+  align-content: flex-start;  
+  display: flex;
+  justify-content: center;
+}
+
+.partition{
+  margin: 10px;
+  padding: 10px;
+  width: 40%;
+  
+}
+.skill {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: #b57cef;
+  transition: width 0.5s ease;
+}
+
+.skill:hover .progress {
+  width: calc(var(--progress) * 100%);
+}
+
+ #art {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.art-card {
+  width: 30%;
+  margin: 0 10px;
+  cursor: pointer;
+  overflow: hidden; /* Hide overflowing content */
+  position: relative;
+  transition: transform 0.3s ease-out; /* Smooth transition */
+  opacity: 0.8;
+}
+
+.art-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  opacity: 1;
+}
+
+.art-card img {
+  width: 100%;  
+  height: 240px;
+}
+
+.art-card h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #f9e4f9; /* Set the text color */
+  background-color: #181616;
+  border-radius: 4px;
+}
+
+.scene-container{
+  width: 100%;
+  height: 100%;
+}
+
+
+#contacts{
+
+  padding: 10px; 
+  align-content: flex-start;
+}
+
+#title5{
+  margin: 10px;
+}
+
+.contact-form{
+  width: 60%;
+  margin-top: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #31063a;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.contact-form-text:focus{
+  box-shadow: 4px 4px 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #a790f3;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
+
+
+footer {
+  
+  color: white;
+  text-align: center;
+  padding: 1vw;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-size: 1.5vw;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+  
+}
+
+@media screen and (max-width: 400px) {
+  /* Adjustments for smaller screens */
+  section {
+    padding: 10px; /* Example adjustment */
+  }
+
+  #name, #title1, #title2 ,#title3, #title4, #title5{
+    font-size: 10vw;
+    font-weight: 600;
+  }
+
+  #welcome{
+    font-size: 3vw;
+  }
+
+  .details{
+    font-size: 4vw;
+    width: 100%;
+  }
+
+  .skill-name{
+    font-size: 4vw;
+  }
+
+  .project-card{
+    width: 90%;
+    height: 21%;
+  }
+
+  .partition{
+    width: 80%;
+  }
+  .progress-bar{
+    width: 100%;
+  }
+
+  .art-card{
+    height: 21%;
+    width: 70%;
+    margin: 2%;
+  }
+
+  footer{
+    height: 10px;
+  }
+
+  footer a{
+    font-size: 2.5vw;
+  }
+}
